@@ -1,0 +1,41 @@
+<c:FragmentDefinition id="itemVehInsAdd" xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:sm="sap.ui.comp.smartfield" xmlns:sf="sap.ui.comp.smartform"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<Dialog id="createDialogVehAdd" title="Veh Insuarnce" contentWidth="50%">
+		<f:SimpleForm layout="ResponsiveGridLayout" id="SystemInfoadd" editable="true" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12"
+			adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+			singleContainerFullSize="false">
+			<f:content>
+				<Label text="Insurance id" labelFor="Insuranceidadd"/>
+				<Input id="Insuranceidadd" type="Number" required="true" width="50%"/>
+				<Label text="Insurer id" labelFor="insureridadd"/>
+				<Input id="Insureridadd" type="Number" required="true" width="50%" enabled="true"/>
+				<Label text="Registeration No" labelFor="regnoadd"/>
+				<Input id="Regnoadd" type="Text" required="true" width="50%"/>
+				<Label text="Start Date" labelFor="validitystartdateadd"/>
+				<DatePicker id="Validitystartdateadd" displayFormat="long"  valueFormat="MM-dd-yyyy" width="15rem" placeholder="Enter Validity Start Date"
+					class="sapUiSmallMarginBottom"/>
+				<Label text="End Date" labelFor="Validityenddateadd"/>
+				<DatePicker id="Validityenddateadd" displayFormat="long" valueFormat="MM-dd-yyyy" width="15rem" placeholder="Enter Validity End Date"
+					class="sapUiSmallMarginBottom"/>
+				<Label text="Value" labelFor="Valueadd"/>
+				<Input id="Valueadd" type="Number" required="true" width="50%"/>
+				<Label text="Registeration Date" labelFor="Vehregdateadd"/>
+				<DatePicker id="Vehregdateadd"  valueFormat="MM-dd-yyyy" displayFormat="long" width="15rem" placeholder="Enter Registeration Date" class="sapUiSmallMarginBottom"/>
+				<Label text="Chasis Number" labelFor="ChasisNumberadd"/>
+				<Input id="ChasisNumberadd" type="Text" required="true" width="50%"/>
+				<Label text="Vehicle Type" labelFor="VehTypeadd"/>
+				<Input id="VehTypeadd" required="true" width="50%"/>
+				<Label text="Premium Amount" labelFor="PremiumAmtadd"/>
+				<Input id="PremiumAmtadd" required="true" width="50%"/>
+				<Input id="Currencyadd" required="true" width="50%"/>
+				<Label text="Fuel Type" labelFor="FuelTypeadd"/>
+				<Input id="FuelTypeadd" required="true" width="50%"/>
+			</f:content>
+		</f:SimpleForm >
+		<buttons>
+			<Button text="Create" icon="sap-icon://Add" press=".onAddVehNew"/>
+			<Button text="Close" icon="sap-icon://decline" press=".onCloseDialogVeh1"/>
+		</buttons>
+	</Dialog>
+</c:FragmentDefinition>

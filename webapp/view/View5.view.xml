@@ -1,0 +1,22 @@
+<!-- Split container not working donot use -->
+<mvc:View controllerName="sap.ui5.InsuranceAgent.Insagentwithodata.controller.View2"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <List id="InsuranceType" items="{/InsuranceType}" mode="SingleSelectMaster" width="100%">
+
+        <items>
+
+            <CustomListItem>
+               
+                <Button type="Neutral" text="{Type}" press=".goToInsuranceDetail" class="sapUiTinyMarginEnd">
+                    <customData>
+                        <BadgeCustomData key="badge" value="2" visible="true"/>
+                    </customData>
+                </Button> 
+
+            </CustomListItem>
+        </items>
+
+    </List>
+</mvc:View>

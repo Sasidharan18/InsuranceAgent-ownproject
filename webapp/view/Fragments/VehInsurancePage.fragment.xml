@@ -1,0 +1,66 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" 
+xmlns:cust_hover="sap.ui5.InsuranceAgent.Insagentwithodata.control"
+	xmlns:comp_control="sap.ui5.InsuranceAgent.Insagentwithodata.comp">
+	<Button enabled="true" icon="sap-icon://add" visible="true" press=".onAddVehIns">
+		<customData>
+			<core:CustomData key="target" value="veh"/>
+		</customData>
+	</Button>
+	<Button enabled="true" icon="sap-icon://sort-ascending" visible="true" press=".onAddVehInsSortAsc"/>
+	<Button enabled="true" icon="sap-icon://sort-descending" visible="true" press=".onAddVehInsSortdesc"/>
+	<Table id="VehInsurance" inset="false" items="{/zcds_vehins}" growing="true" growingThreshold="10" growingScrollToLoad="false">
+		<!--sap.ui5.InsuranceAgent.Insagentwithodata.control.HoverButton-->
+		<!-- "InsuranceID": "1",
+            "InsuranceType": "Veh",
+            "RegNo": "TN40T1111",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000" -->
+		<columns>
+			<Column width="12em" class="sapUiTinyMarginTop">
+				<Text text="RegNo(Extended standard Control)"/>
+			</Column>
+			<Column width="14em" class="sapUiNoMargin" minScreenWidth="Desktop">
+				<Text text="Custom Control Aggregation"/>
+			</Column>
+			<Column width="12em" class="sapUiResponsiveMargin" minScreenWidth="Desktop">
+				<Text text="Composite Control"/>
+			</Column>
+			<Column minScreenWidth="Desktop" demandPopin="true" class="sapUiResponsiveMargin" hAlign="Center">
+				<Text text="InsuranceId"/> 
+			</Column>
+			<Column minScreenWidth="Desktop" hAlign="End">
+				<Text text="InsuranceType"/>
+			</Column>
+			<Column minScreenWidth="Phone" demandPopin="true" hAlign="Center">
+				<Text text="Value"/>
+			</Column>
+			<Column hAlign="End" minScreenWidth="Desktop">
+				<Text text="ValidityStartDate"/>
+			</Column>
+			<Column hAlign="End" minScreenWidth="Phone" demandPopin="true">
+				<Text text="ValidityEndDate"/>
+			</Column>
+			<Column hAlign="End" demandPopin="true" minScreenWidth="Desktop">
+				<Text text="Premium Amount"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem type="Navigation" press=".call_itemVehIns">
+				<cells>
+					<!--<Button text="{Regno}" />-->
+					<cust_hover:HoverButton text="{Regno}" hoverText="{Regno}" allowHover="true" hover="onHover" class="sapUiNoMargin"/>
+					<cust_hover:HoverButton1 class="sapUiNoMargin"/>
+					<comp_control:vehinfo ChasisNumber="{ChasisNumber}" VehType="{VehType}" FuelType="{FuelType}" submit="onSubmit"/>
+					<Text text="{Insuranceid}"/>
+					<Text text="{Insurancetype}"/>
+					<ObjectNumber number="{ parts:[{path:'Value'}], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }" unit="INR"/>
+					<Text text="{ path: 'Validitystartdate', type: 'sap.ui.model.odata.type.Date', formatOptions: { style: 'medium' } }"/>
+					<Text
+						text="{ path: 'Validityenddate', type:'sap.ui.model.odata.type.DateTimeOffset', formatOptions: { relative: true, relativeScale: 'auto' } }"/>
+					<Input id="newvalue" value="{ path: 'PremiumAmt', type: 'sap.ui.model.type.Integer', constraints: { minimum : 1, maximum : 10 } }"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>

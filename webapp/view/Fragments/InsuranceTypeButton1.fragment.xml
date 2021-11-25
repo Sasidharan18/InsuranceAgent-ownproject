@@ -1,0 +1,68 @@
+<c:FragmentDefinition xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+
+    <!-- <List id="InsuranceType" items="{/InsuranceType}" mode="SingleSelectMaster" width="100%">
+
+        <items>
+
+            <CustomListItem>
+
+                <Button type="Neutral" text="{Type}" press=".onPressNavToInsurancePage" class="sapUiTinyMarginEnd">
+                    <customData>
+                        <BadgeCustomData key="target" value="2" visible="true"/>
+                        <c:CustomData key="target" value="term" />
+                    </customData>
+                </Button>
+
+            </CustomListItem>
+        </items>
+
+    </List> -->
+
+    <Button type="Neutral" text="Term" press=".onPressNavToInsurancePage" class="sapUiTinyMarginEnd">
+        <customData>
+            <BadgeCustomData key="target"  value="{ 
+										
+                                        parts: [ {value: 'Term'} , {path: 'id'}],
+										formatter: '.formatter.InsurersCount1'
+									}"
+                                    visible="true"/>
+            <c:CustomData key="target" value="term" />
+        </customData>
+    </Button>
+
+    <Button type="Neutral" text="Vehicle" press=".onPressNavToInsurancePage" class="sapUiTinyMarginEnd">
+        <customData>
+            <BadgeCustomData key="target" value="{ 
+										
+                                        parts: [ {value: 'Veh'} , {path: 'id'}],
+										formatter: '.formatter.InsurersCount1'
+									}" visible="true"/>
+            <c:CustomData key="target" value="veh" />
+        </customData>
+    </Button>
+
+ <Button type="Neutral" text="Life" press=".onPressNavToInsurancePage" class="sapUiTinyMarginEnd">
+        <customData>
+            <BadgeCustomData key="target" value="{ 
+										
+                                        parts: [ {value: 'Life'} , {path: 'id'}],
+										formatter: '.formatter.InsurersCount1'
+									}" visible="true"/>
+            <c:CustomData key="target" value="life" />
+        </customData>
+    </Button>
+
+     <Button type="Neutral" text="Medical" press=".onPressNavToInsurancePage" class="sapUiTinyMarginEnd">
+        <customData>
+            <BadgeCustomData key="target" value="{ 
+										
+                                        parts: [ {value: 'Med'} , {path: 'id'}],
+										formatter: '.formatter.InsurersCount1'
+									}" visible="true"/>
+            <c:CustomData key="target" value="med" />
+        </customData>
+    </Button>
+
+
+</c:FragmentDefinition>

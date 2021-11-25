@@ -1,0 +1,181 @@
+[{
+	"Insuranceid": 792,
+	"Insurerid": 2,
+	"Insurancetype": "Insurancetype 1",
+	"Regno": "Regno 1",
+	"Validitystartdate": "/Date(1067255791000)/",
+	"Validityenddate": "/Date(1082289391000)/",
+	"Value": 9443,
+	"Vehregdate": "/Date(1567598191000)/",
+	"ChasisNumber": "ChasisNumber 1",
+	"VehType": "VehType 1",
+	"PremiumAmt": 6043.81,
+	"Currency": "Currency 1",
+	"FuelType": "FuelType 1",
+	"__metadata": {
+		"uri": "zcds_vehins(792)",
+		"type": "cds_zcds_insagent.zcds_vehinsType"
+	}
+}, {
+	"Insuranceid": 1898,
+	"Insurerid": 0,
+	"Insurancetype": "Insurancetype 2",
+	"Regno": "Regno 2",
+	"Validitystartdate": "/Date(1500033391000)/",
+	"Validityenddate": "/Date(1139658991000)/",
+	"Value": 1082,
+	"Vehregdate": "/Date(1391774191000)/",
+	"ChasisNumber": "ChasisNumber 2",
+	"VehType": "VehType 2",
+	"PremiumAmt": 4782.39,
+	"Currency": "Currency 2",
+	"FuelType": "FuelType 2",
+	"__metadata": {
+		"uri": "zcds_vehins(1898)",
+		"type": "cds_zcds_insagent.zcds_vehinsType"
+	}
+}, {
+	"Insuranceid": 6618,
+	"Insurerid": 4,
+	"Insurancetype": "Insurancetype 3",
+	"Regno": "Regno 3",
+	"Validitystartdate": "/Date(1158407791000)/",
+	"Validityenddate": "/Date(1090842991000)/",
+	"Value": 2383,
+	"Vehregdate": "/Date(1235908591000)/",
+	"ChasisNumber": "ChasisNumber 3",
+	"VehType": "VehType 3",
+	"PremiumAmt": 5449.66,
+	"Currency": "Currency 3",
+	"FuelType": "FuelType 3",
+	"__metadata": {
+		"uri": "zcds_vehins(6618)",
+		"type": "cds_zcds_insagent.zcds_vehinsType"
+	}
+}, {
+	"Insuranceid": 8548,
+	"Insurerid": 7,
+	"Insurancetype": "Insurancetype 4",
+	"Regno": "Regno 4",
+	"Validitystartdate": "/Date(1451476591000)/",
+	"Validityenddate": "/Date(1050926191000)/",
+	"Value": 6959,
+	"Vehregdate": "/Date(1013169391000)/",
+	"ChasisNumber": "ChasisNumber 4",
+	"VehType": "VehType 4",
+	"PremiumAmt": 7566.99,
+	"Currency": "Currency 4",
+	"FuelType": "FuelType 4",
+	"__metadata": {
+		"uri": "zcds_vehins(8548)",
+		"type": "cds_zcds_insagent.zcds_vehinsType"
+	}
+}, {
+	"Insuranceid": 251,
+	"Insurerid": 6,
+	"Insurancetype": "Insurancetype 5",
+	"Regno": "Regno 5",
+	"Validitystartdate": "/Date(1215172591000)/",
+	"Validityenddate": "/Date(1467374191000)/",
+	"Value": 5925,
+	"Vehregdate": "/Date(1562846191000)/",
+	"ChasisNumber": "ChasisNumber 5",
+	"VehType": "VehType 5",
+	"PremiumAmt": 8708.98,
+	"Currency": "Currency 5",
+	"FuelType": "FuelType 5",
+	"__metadata": {
+		"uri": "zcds_vehins(251)",
+		"type": "cds_zcds_insagent.zcds_vehinsType"
+	}
+}, {
+	"Insuranceid": 2342,
+	"Insurerid": 9,
+	"Insurancetype": "Insurancetype 6",
+	"Regno": "Regno 6",
+	"Validitystartdate": "/Date(1463226991000)/",
+	"Validityenddate": "/Date(968673391000)/",
+	"Value": 5615,
+	"Vehregdate": "/Date(1390650991000)/",
+	"ChasisNumber": "ChasisNumber 6",
+	"VehType": "VehType 6",
+	"PremiumAmt": 2500.55,
+	"Currency": "Currency 6",
+	"FuelType": "FuelType 6",
+	"__metadata": {
+		"uri": "zcds_vehins(2342)",
+		"type": "cds_zcds_insagent.zcds_vehinsType"
+	}
+}, {
+	"Insuranceid": 6240,
+	"Insurerid": 2,
+	"Insurancetype": "Insurancetype 7",
+	"Regno": "Regno 7",
+	"Validitystartdate": "/Date(1508500591000)/",
+	"Validityenddate": "/Date(1254830191000)/",
+	"Value": 5720,
+	"Vehregdate": "/Date(1571140591000)/",
+	"ChasisNumber": "ChasisNumber 7",
+	"VehType": "VehType 7",
+	"PremiumAmt": 7329.31,
+	"Currency": "Currency 7",
+	"FuelType": "FuelType 7",
+	"__metadata": {
+		"uri": "zcds_vehins(6240)",
+		"type": "cds_zcds_insagent.zcds_vehinsType"
+	}
+}, {
+	"Insuranceid": 775,
+	"Insurerid": 0,
+	"Insurancetype": "Insurancetype 8",
+	"Regno": "Regno 8",
+	"Validitystartdate": "/Date(1374494191000)/",
+	"Validityenddate": "/Date(992087791000)/",
+	"Value": 9007,
+	"Vehregdate": "/Date(1532606191000)/",
+	"ChasisNumber": "ChasisNumber 8",
+	"VehType": "VehType 8",
+	"PremiumAmt": 5370.75,
+	"Currency": "Currency 8",
+	"FuelType": "FuelType 8",
+	"__metadata": {
+		"uri": "zcds_vehins(775)",
+		"type": "cds_zcds_insagent.zcds_vehinsType"
+	}
+}, {
+	"Insuranceid": 5023,
+	"Insurerid": 6,
+	"Insurancetype": "Insurancetype 9",
+	"Regno": "Regno 9",
+	"Validitystartdate": "/Date(1226058991000)/",
+	"Validityenddate": "/Date(1368964591000)/",
+	"Value": 1411,
+	"Vehregdate": "/Date(1189770991000)/",
+	"ChasisNumber": "ChasisNumber 9",
+	"VehType": "VehType 9",
+	"PremiumAmt": 4086.07,
+	"Currency": "Currency 9",
+	"FuelType": "FuelType 9",
+	"__metadata": {
+		"uri": "zcds_vehins(5023)",
+		"type": "cds_zcds_insagent.zcds_vehinsType"
+	}
+}, {
+	"Insuranceid": 5794,
+	"Insurerid": 9,
+	"Insurancetype": "Insurancetype 10",
+	"Regno": "Regno 10",
+	"Validitystartdate": "/Date(1155988591000)/",
+	"Validityenddate": "/Date(1396871791000)/",
+	"Value": 8235,
+	"Vehregdate": "/Date(1455364591000)/",
+	"ChasisNumber": "ChasisNumber 10",
+	"VehType": "VehType 10",
+	"PremiumAmt": 7640.19,
+	"Currency": "Currency 10",
+	"FuelType": "FuelType 10",
+	"__metadata": {
+		"uri": "zcds_vehins(5794)",
+		"type": "cds_zcds_insagent.zcds_vehinsType"
+	}
+}]

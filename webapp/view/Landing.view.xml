@@ -1,0 +1,5 @@
+<mvc:View controllerName="sap.ui5.InsuranceAgent.Insagentwithodata.controller.Landing"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<!--  Dummy landing pageti display empty space -->
+</mvc:View>

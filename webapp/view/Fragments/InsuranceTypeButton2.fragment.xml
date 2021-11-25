@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <HBox width="100%">
+        <SegmentedButton class="sapUiSmallMarginBottom">
+            <items>
+                <SegmentedButtonItem text="Term1" key="target" value="term" width = "5rem" press=".onPressNavToInsurancePage">
+                    <customData>
+                        <core:CustomData key="target" value="term" />
+                    </customData>
+                </SegmentedButtonItem>
+
+                <SegmentedButtonItem text="Vehicle" key="target" value="veh" width = "5rem" press=".onPressNavToInsurancePage">
+                    <customData>
+                   
+                        <core:CustomData key="target" value="veh" />
+                    </customData>
+                </SegmentedButtonItem>
+
+                <SegmentedButtonItem text="Life" key="target" value="med" width = "5rem" press=".onPressNavToInsurancePage">
+                    <customData>
+                        <core:CustomData key="target" value="life" />
+                    </customData>
+                </SegmentedButtonItem>
+
+                <SegmentedButtonItem text="Medical" key="target" value="life" width = "5rem" press=".onPressNavToInsurancePage">
+                    <customData>
+                        <core:CustomData key="target" value="med" />
+                    </customData>
+                </SegmentedButtonItem>
+
+            </items>
+        </SegmentedButton>
+
+    </HBox>
+
+
+</core:FragmentDefinition>

@@ -1,0 +1,131 @@
+[{
+	"Matid": "Matid 1",
+	"Locid": "Locid 1",
+	"Applid": "Applid 1",
+	"Plstat": "Plstat 1",
+	"Matnr": "Matnr 1",
+	"Locno": "Locno 1",
+	"Scope": "Scope 1",
+	"Scopeprflid": "Scopeprflid 1",
+	"__metadata": {
+		"uri": "ztest_matplsta(Matid='Matid%201',Locid='Locid%201',Applid='Applid%201')",
+		"type": "cds_zcds_insagent.ztest_matplstaType"
+	}
+}, {
+	"Matid": "Matid 2",
+	"Locid": "Locid 2",
+	"Applid": "Applid 2",
+	"Plstat": "Plstat 2",
+	"Matnr": "Matnr 2",
+	"Locno": "Locno 2",
+	"Scope": "Scope 2",
+	"Scopeprflid": "Scopeprflid 2",
+	"__metadata": {
+		"uri": "ztest_matplsta(Matid='Matid%202',Locid='Locid%202',Applid='Applid%202')",
+		"type": "cds_zcds_insagent.ztest_matplstaType"
+	}
+}, {
+	"Matid": "Matid 3",
+	"Locid": "Locid 3",
+	"Applid": "Applid 3",
+	"Plstat": "Plstat 3",
+	"Matnr": "Matnr 3",
+	"Locno": "Locno 3",
+	"Scope": "Scope 3",
+	"Scopeprflid": "Scopeprflid 3",
+	"__metadata": {
+		"uri": "ztest_matplsta(Matid='Matid%203',Locid='Locid%203',Applid='Applid%203')",
+		"type": "cds_zcds_insagent.ztest_matplstaType"
+	}
+}, {
+	"Matid": "Matid 4",
+	"Locid": "Locid 4",
+	"Applid": "Applid 4",
+	"Plstat": "Plstat 4",
+	"Matnr": "Matnr 4",
+	"Locno": "Locno 4",
+	"Scope": "Scope 4",
+	"Scopeprflid": "Scopeprflid 4",
+	"__metadata": {
+		"uri": "ztest_matplsta(Matid='Matid%204',Locid='Locid%204',Applid='Applid%204')",
+		"type": "cds_zcds_insagent.ztest_matplstaType"
+	}
+}, {
+	"Matid": "Matid 5",
+	"Locid": "Locid 5",
+	"Applid": "Applid 5",
+	"Plstat": "Plstat 5",
+	"Matnr": "Matnr 5",
+	"Locno": "Locno 5",
+	"Scope": "Scope 5",
+	"Scopeprflid": "Scopeprflid 5",
+	"__metadata": {
+		"uri": "ztest_matplsta(Matid='Matid%205',Locid='Locid%205',Applid='Applid%205')",
+		"type": "cds_zcds_insagent.ztest_matplstaType"
+	}
+}, {
+	"Matid": "Matid 6",
+	"Locid": "Locid 6",
+	"Applid": "Applid 6",
+	"Plstat": "Plstat 6",
+	"Matnr": "Matnr 6",
+	"Locno": "Locno 6",
+	"Scope": "Scope 6",
+	"Scopeprflid": "Scopeprflid 6",
+	"__metadata": {
+		"uri": "ztest_matplsta(Matid='Matid%206',Locid='Locid%206',Applid='Applid%206')",
+		"type": "cds_zcds_insagent.ztest_matplstaType"
+	}
+}, {
+	"Matid": "Matid 7",
+	"Locid": "Locid 7",
+	"Applid": "Applid 7",
+	"Plstat": "Plstat 7",
+	"Matnr": "Matnr 7",
+	"Locno": "Locno 7",
+	"Scope": "Scope 7",
+	"Scopeprflid": "Scopeprflid 7",
+	"__metadata": {
+		"uri": "ztest_matplsta(Matid='Matid%207',Locid='Locid%207',Applid='Applid%207')",
+		"type": "cds_zcds_insagent.ztest_matplstaType"
+	}
+}, {
+	"Matid": "Matid 8",
+	"Locid": "Locid 8",
+	"Applid": "Applid 8",
+	"Plstat": "Plstat 8",
+	"Matnr": "Matnr 8",
+	"Locno": "Locno 8",
+	"Scope": "Scope 8",
+	"Scopeprflid": "Scopeprflid 8",
+	"__metadata": {
+		"uri": "ztest_matplsta(Matid='Matid%208',Locid='Locid%208',Applid='Applid%208')",
+		"type": "cds_zcds_insagent.ztest_matplstaType"
+	}
+}, {
+	"Matid": "Matid 9",
+	"Locid": "Locid 9",
+	"Applid": "Applid 9",
+	"Plstat": "Plstat 9",
+	"Matnr": "Matnr 9",
+	"Locno": "Locno 9",
+	"Scope": "Scope 9",
+	"Scopeprflid": "Scopeprflid 9",
+	"__metadata": {
+		"uri": "ztest_matplsta(Matid='Matid%209',Locid='Locid%209',Applid='Applid%209')",
+		"type": "cds_zcds_insagent.ztest_matplstaType"
+	}
+}, {
+	"Matid": "Matid 10",
+	"Locid": "Locid 10",
+	"Applid": "Applid 10",
+	"Plstat": "Plstat 10",
+	"Matnr": "Matnr 10",
+	"Locno": "Locno 10",
+	"Scope": "Scope 10",
+	"Scopeprflid": "Scopeprflid 10",
+	"__metadata": {
+		"uri": "ztest_matplsta(Matid='Matid%2010',Locid='Locid%2010',Applid='Applid%2010')",
+		"type": "cds_zcds_insagent.ztest_matplstaType"
+	}
+}]

@@ -1,0 +1,44 @@
+<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core">
+	<ObjectHeader title="{AirLineName}" number=" " numberUnit="{LocalCurrencyCode}" titleHref="{URL}">
+		<attributes>
+			<ObjectAttribute text="{AirLineID}"></ObjectAttribute>
+			<ObjectAttribute text="{URL}"></ObjectAttribute>
+		</attributes>
+	</ObjectHeader>
+	<Table id="idFlights" items="{ path: 'CarrierFlights', sorter: { path: 'AirLineID' }}" mode="SingleSelectMaster" growing="true"
+		growingThreshold="10">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Flights BAS3 from webide" level="H2"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column>
+				<Text text="{i18n>carriername}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>flightno}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>flightdate}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>seatmax}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>seatoc}"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<ObjectIdentifier title="{AirLineID}" text="{AirLineID}"/>
+					<Text text="{FlightConnectionID}"/>
+					<Text text="{ path: 'FlightDate', type: 'sap.ui.model.type.Date' }"/>
+					<Text text="{EconomyClassMaximumSeats}"/>
+					<Text text="{EconomyClassOccupiedSeats}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</c:FragmentDefinition>

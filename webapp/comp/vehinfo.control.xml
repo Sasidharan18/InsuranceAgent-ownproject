@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.m" 
+xmlns:core = "sap.ui.core"
+xmlns:l="sap.ui.layout" >
+	
+<l:VerticalLayout>
+        <FlexBox alignItems="Center" justifyContent="Center">
+            <core:Icon src="sap-icon://flight" class="sapUITinyMarginEnd" press="_submitPressed"/>
+            
+            <Text text="{$this>/ChasisNumber}"/>
+        </FlexBox>
+        <FlexBox alignItems="Center" justifyContent="Center">
+            <core:Icon src="sap-icon://shipping-status" class="sapUITinyMarginEnd"/>
+            <Text text="{$this>/VehType}"/>
+        </FlexBox>
+        <FlexBox alignItems="Center" justifyContent="Center">
+            <core:Icon src="sap-icon://suitcase" class="sapUITinyMarginEnd"/>
+            <Text text="{$this>/FuelType}"/>        
+        </FlexBox>
+    </l:VerticalLayout>
+</core:FragmentDefinition>

@@ -1,0 +1,91 @@
+[{
+	"CurrencyCode": "CurrencyCode 1",
+	"ISOCode": "ISOCode 1",
+	"Text": "Text 1",
+	"DecimalPlaces": 0,
+	"__metadata": {
+		"uri": "SAP__Currencies('CurrencyCode%201')",
+		"type": "cds_zcds_insagent.SAP__Currency"
+	}
+}, {
+	"CurrencyCode": "CurrencyCode 2",
+	"ISOCode": "ISOCode 2",
+	"Text": "Text 2",
+	"DecimalPlaces": 0,
+	"__metadata": {
+		"uri": "SAP__Currencies('CurrencyCode%202')",
+		"type": "cds_zcds_insagent.SAP__Currency"
+	}
+}, {
+	"CurrencyCode": "CurrencyCode 3",
+	"ISOCode": "ISOCode 3",
+	"Text": "Text 3",
+	"DecimalPlaces": 6,
+	"__metadata": {
+		"uri": "SAP__Currencies('CurrencyCode%203')",
+		"type": "cds_zcds_insagent.SAP__Currency"
+	}
+}, {
+	"CurrencyCode": "CurrencyCode 4",
+	"ISOCode": "ISOCode 4",
+	"Text": "Text 4",
+	"DecimalPlaces": 2,
+	"__metadata": {
+		"uri": "SAP__Currencies('CurrencyCode%204')",
+		"type": "cds_zcds_insagent.SAP__Currency"
+	}
+}, {
+	"CurrencyCode": "CurrencyCode 5",
+	"ISOCode": "ISOCode 5",
+	"Text": "Text 5",
+	"DecimalPlaces": 7,
+	"__metadata": {
+		"uri": "SAP__Currencies('CurrencyCode%205')",
+		"type": "cds_zcds_insagent.SAP__Currency"
+	}
+}, {
+	"CurrencyCode": "CurrencyCode 6",
+	"ISOCode": "ISOCode 6",
+	"Text": "Text 6",
+	"DecimalPlaces": 2,
+	"__metadata": {
+		"uri": "SAP__Currencies('CurrencyCode%206')",
+		"type": "cds_zcds_insagent.SAP__Currency"
+	}
+}, {
+	"CurrencyCode": "CurrencyCode 7",
+	"ISOCode": "ISOCode 7",
+	"Text": "Text 7",
+	"DecimalPlaces": 5,
+	"__metadata": {
+		"uri": "SAP__Currencies('CurrencyCode%207')",
+		"type": "cds_zcds_insagent.SAP__Currency"
+	}
+}, {
+	"CurrencyCode": "CurrencyCode 8",
+	"ISOCode": "ISOCode 8",
+	"Text": "Text 8",
+	"DecimalPlaces": 7,
+	"__metadata": {
+		"uri": "SAP__Currencies('CurrencyCode%208')",
+		"type": "cds_zcds_insagent.SAP__Currency"
+	}
+}, {
+	"CurrencyCode": "CurrencyCode 9",
+	"ISOCode": "ISOCode 9",
+	"Text": "Text 9",
+	"DecimalPlaces": 0,
+	"__metadata": {
+		"uri": "SAP__Currencies('CurrencyCode%209')",
+		"type": "cds_zcds_insagent.SAP__Currency"
+	}
+}, {
+	"CurrencyCode": "CurrencyCode 10",
+	"ISOCode": "ISOCode 10",
+	"Text": "Text 10",
+	"DecimalPlaces": 8,
+	"__metadata": {
+		"uri": "SAP__Currencies('CurrencyCode%2010')",
+		"type": "cds_zcds_insagent.SAP__Currency"
+	}
+}]

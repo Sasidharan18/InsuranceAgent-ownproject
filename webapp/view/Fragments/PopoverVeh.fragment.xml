@@ -1,0 +1,23 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover
+		id="myPopover"
+		title="{Regno}"
+		class="sapUiResponsivePadding--header sapUiResponsivePadding--footer"
+		placement="Horizontal">
+		<VBox>
+		<Text text="Make : Honda" />
+		<Text text="Model : Amaze" />
+		<Text text="Year : 2021" />
+		<!--<Image src="image.jpeg" width="15em" densityAware="false" />-->
+		<Carousel id='carousel'  class="sapUiContentPadding" loop="true" width = "15em"> 
+				<Image src="image.jpeg" width="15em" densityAware="false" />
+				<Image src="image.jpeg" width="15em" densityAware="false" />
+				<Image src="image.jpeg" width="15em" densityAware="false" />
+				<Image src="image.jpeg" width="15em" densityAware="false" />
+	
+		</Carousel>
+		</VBox>
+	</Popover>
+</core:FragmentDefinition>

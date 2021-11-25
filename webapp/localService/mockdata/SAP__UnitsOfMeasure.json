@@ -1,0 +1,101 @@
+[{
+	"UnitCode": "UnitCode 1",
+	"ISOCode": "ISOCode 1",
+	"ExternalCode": "ExternalCode 1",
+	"Text": "Text 1",
+	"DecimalPlaces": 9,
+	"__metadata": {
+		"uri": "SAP__UnitsOfMeasure('UnitCode%201')",
+		"type": "cds_zcds_insagent.SAP__UnitOfMeasure"
+	}
+}, {
+	"UnitCode": "UnitCode 2",
+	"ISOCode": "ISOCode 2",
+	"ExternalCode": "ExternalCode 2",
+	"Text": "Text 2",
+	"DecimalPlaces": 416,
+	"__metadata": {
+		"uri": "SAP__UnitsOfMeasure('UnitCode%202')",
+		"type": "cds_zcds_insagent.SAP__UnitOfMeasure"
+	}
+}, {
+	"UnitCode": "UnitCode 3",
+	"ISOCode": "ISOCode 3",
+	"ExternalCode": "ExternalCode 3",
+	"Text": "Text 3",
+	"DecimalPlaces": 6671,
+	"__metadata": {
+		"uri": "SAP__UnitsOfMeasure('UnitCode%203')",
+		"type": "cds_zcds_insagent.SAP__UnitOfMeasure"
+	}
+}, {
+	"UnitCode": "UnitCode 4",
+	"ISOCode": "ISOCode 4",
+	"ExternalCode": "ExternalCode 4",
+	"Text": "Text 4",
+	"DecimalPlaces": 2613,
+	"__metadata": {
+		"uri": "SAP__UnitsOfMeasure('UnitCode%204')",
+		"type": "cds_zcds_insagent.SAP__UnitOfMeasure"
+	}
+}, {
+	"UnitCode": "UnitCode 5",
+	"ISOCode": "ISOCode 5",
+	"ExternalCode": "ExternalCode 5",
+	"Text": "Text 5",
+	"DecimalPlaces": 7960,
+	"__metadata": {
+		"uri": "SAP__UnitsOfMeasure('UnitCode%205')",
+		"type": "cds_zcds_insagent.SAP__UnitOfMeasure"
+	}
+}, {
+	"UnitCode": "UnitCode 6",
+	"ISOCode": "ISOCode 6",
+	"ExternalCode": "ExternalCode 6",
+	"Text": "Text 6",
+	"DecimalPlaces": 2584,
+	"__metadata": {
+		"uri": "SAP__UnitsOfMeasure('UnitCode%206')",
+		"type": "cds_zcds_insagent.SAP__UnitOfMeasure"
+	}
+}, {
+	"UnitCode": "UnitCode 7",
+	"ISOCode": "ISOCode 7",
+	"ExternalCode": "ExternalCode 7",
+	"Text": "Text 7",
+	"DecimalPlaces": 5101,
+	"__metadata": {
+		"uri": "SAP__UnitsOfMeasure('UnitCode%207')",
+		"type": "cds_zcds_insagent.SAP__UnitOfMeasure"
+	}
+}, {
+	"UnitCode": "UnitCode 8",
+	"ISOCode": "ISOCode 8",
+	"ExternalCode": "ExternalCode 8",
+	"Text": "Text 8",
+	"DecimalPlaces": 7638,
+	"__metadata": {
+		"uri": "SAP__UnitsOfMeasure('UnitCode%208')",
+		"type": "cds_zcds_insagent.SAP__UnitOfMeasure"
+	}
+}, {
+	"UnitCode": "UnitCode 9",
+	"ISOCode": "ISOCode 9",
+	"ExternalCode": "ExternalCode 9",
+	"Text": "Text 9",
+	"DecimalPlaces": 100,
+	"__metadata": {
+		"uri": "SAP__UnitsOfMeasure('UnitCode%209')",
+		"type": "cds_zcds_insagent.SAP__UnitOfMeasure"
+	}
+}, {
+	"UnitCode": "UnitCode 10",
+	"ISOCode": "ISOCode 10",
+	"ExternalCode": "ExternalCode 10",
+	"Text": "Text 10",
+	"DecimalPlaces": 8688,
+	"__metadata": {
+		"uri": "SAP__UnitsOfMeasure('UnitCode%2010')",
+		"type": "cds_zcds_insagent.SAP__UnitOfMeasure"
+	}
+}]

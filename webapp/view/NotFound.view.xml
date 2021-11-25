@@ -1,0 +1,7 @@
+<mvc:View controllerName="sap.ui5.InsuranceAgent.Insagentwithodata.controller.InsuranceDetail"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+<MessagePage title =" Title" text ="text" description="Description"
+showNavButton="true" navButtonPress="onNavBack"/>
+</mvc:View>

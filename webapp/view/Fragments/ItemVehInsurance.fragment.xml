@@ -1,0 +1,69 @@
+<c:FragmentDefinition id="itemVehIns" xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:sm="sap.ui.comp.smartfield" xmlns:sf="sap.ui.comp.smartform"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:u="sap.ui.unified">
+	<Dialog id="createDialogVeh" title="Veh Insuarnce" contentWidth="50%" draggable-="true" closeOnNavigation="true">
+		<f:SimpleForm layout="ResponsiveGridLayout" id="SystemInfo" editable="true" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12"
+			adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+			singleContainerFullSize="false" justifyContent="Center">
+			<Carousel id='carousel1' loop="true" height='10em' width='100%'>
+				<Image src="image.jpeg"/>
+				<Image src="image.jpeg"/>
+				<Image src="image.jpeg"/>
+				<Image src="image.jpeg"/>
+			</Carousel>
+		</f:SimpleForm >
+		<!--</VBOX>-->
+		<!-- Smart Form -->
+		<sf:SmartForm id="smartForm" app:defaultCheckBoxDisplayBehaviour="OnOff" app:defaultDropDownDisplayBehaviour="idAndDescription"
+			flexEnabled="false" useHorizontalLayout="false" editTogglable="true" title="{Regno}">
+			<sf:Group>
+				<sf:GroupElement label="ID">
+					<sm:SmartField value="{path:'Insuranceid'}" id="Insuranceid" enabled="false"/>
+				</sf:GroupElement>
+				<sf:GroupElement label="Insurer ID">
+					<sm:SmartField value="{path:'Insurerid'}" id="Insurerid" enabled="false" visible="false"/>
+				</sf:GroupElement>
+				<sf:GroupElement label="Reg No">
+					<sm:SmartField value="{path:'Regno'}" id="Regno" enabled="false" visible="false"/>
+				</sf:GroupElement>
+			</sf:Group>
+			<sf:Group label="Vehicle Details">
+				<sf:GroupElement label="Registration Date">
+					<sm:SmartField value="{Vehregdate}" id="Vehregdate"/>
+				</sf:GroupElement>
+				<sf:GroupElement label="Chasis Number">
+					<sm:SmartField value="{ChasisNumber}" id="ChasisNumber"/>
+				</sf:GroupElement>
+				<sf:GroupElement label="Vehicle Type">
+					<sm:SmartField value="{VehType}" id="VehType"/>
+				</sf:GroupElement>
+				<sf:GroupElement label="Fuel Type">
+					<sm:SmartField value="{FuelType}" id="FuelType"/>
+				</sf:GroupElement>
+			</sf:Group>
+			<sf:Group label="Payment">
+				<sf:GroupElement label="Validity Start Date">
+					<sm:SmartField value="{Validitystartdate}" id="Validitystartdate"/>
+				</sf:GroupElement>
+				<sf:GroupElement label="Validity End Date">
+					<sm:SmartField value="{Validityenddate}" id="Validityenddate"/>
+				</sf:GroupElement>
+				<sf:GroupElement label="Insurance Value">
+					<sm:SmartField value="{Value}" id="Value"/>
+				</sf:GroupElement>
+				<sf:GroupElement label="Premium Amount">
+					<!--<u:Currency value="{PremiumAmt}" currency="{currency}" useSymbol="false"/>-->
+					<sm:SmartField value="{PremiumAmt}" id="PremiumAmt" type="Number" uomEnabled="true"/>
+				</sf:GroupElement>
+				<sf:GroupElement label="Currency">
+					<sm:SmartField value="{path:'Currency'}" id="Currency" enabled="false" visible="false"/>
+				</sf:GroupElement>
+			</sf:Group>
+		</sf:SmartForm>
+		<buttons>
+			<Button text="Close" icon="sap-icon://decline" press=".onCloseDialogVeh"/>
+			<Button text="Delete" icon="sap-icon://delete" press=".onDeleteVeh"/>
+			<Button text="Update" press=".onUpdateVeh"/>
+		</buttons>
+	</Dialog>
+</c:FragmentDefinition>

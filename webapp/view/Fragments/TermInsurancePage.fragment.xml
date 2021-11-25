@@ -1,0 +1,80 @@
+<c:FragmentDefinition xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+    <!-- <List id="InsuranceType1" items="{/InsuranceType}" mode="SingleSelectMaster" width="100%">
+
+        <items>
+
+            <CustomListItem>
+               
+                
+
+            </CustomListItem>
+        </items>
+
+    </List> -->
+    <!-- "InsuranceTerm": [{
+            "InsuranceID": "1",
+            "InsuranceType": "Term",
+            "Name": "Maddy",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "value": "1500000" -->
+            <Button   enabled="true"   icon="sap-icon://add"   visible="true"  press=".onPressCreate" >
+                <customData>
+                   <c:CustomData key="target" value="veh" />
+                </customData>
+            </Button>
+
+    <Table id="TermInsurance" inset="true" items="{
+			path: '/InsuranceTerm',
+			sorter: {
+				path: 'InsuranceId'
+			}
+		}" >
+
+        <columns >
+            <Column width="12em">
+                <Text text="InsuranceID" />
+            </Column>
+            <!-- <Column minScreenWidth="Tablet" demandPopin="true">
+                <Text text="InsuranceType" />
+            </Column> -->
+            <Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+                <Text text="Name" />
+            </Column>
+            <Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+                <Text text="Value" />
+            </Column>
+            <Column hAlign="End">
+                <Text text="ValidityStartDate" />
+            </Column>
+            <Column hAlign="End">
+                <Text text="ValidityEndtDate" />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem type="Navigation"  press="goToTermInsuranceMember"  >
+                <cells >
+                    <ObjectIdentifier title="{InsuranceID}" text=""/>
+                    <!-- <Text text="{InsuranceType}" /> -->
+                    <Text text="{Name}" />
+                    <ObjectNumber number="{
+								parts:[{path:'Value'}],
+								type: 'sap.ui.model.type.Currency',
+								formatOptions: {showMeasure: false}
+							}" unit="INR" />
+                    <Text text="{
+                               path: 'ValidityStartDate', 
+                               type: 'sap.ui.model.odata.type.Date',
+				               formatOptions: {
+					            style: 'medium' } }" />
+                    <Text text="{
+                               path: 'ValidityEndDate', 
+                               type:'sap.ui.model.odata.type.DateTimeOffset', 
+                               formatOptions: { relative: true, relativeScale: 'auto' } }" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+
+</c:FragmentDefinition>

@@ -1,0 +1,39 @@
+<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:smartTable="sap.ui.comp.smarttable"
+	xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+	<!--<smartFilterBar:SmartFilterBar id="smartFilterBar" entitySet="FlightSet">-->
+	<!--	<smartFilterBar:controlConfiguration>-->
+	<!--		<smartFilterBar:ControlConfiguration key="Flight" visibleInAdvancedArea="true" preventInitialDataFetchInValueHelpDialog="false"/>-->
+	<!--	</smartFilterBar:controlConfiguration>-->
+	<!--</smartFilterBar:SmartFilterBar>-->
+	<!--<smartTable:SmartTable id="smartTable_ResponsiveTable"  tableType="ResponsiveTable" editable="false"-->
+	<!--	entitySet="zcds_lifeinsSet" useVariantManagement="false" useTablePersonalisation="false" header="Flights" showRowCount="true"-->
+	<!--	useExportToExcel="true" enableAutoBinding="true">-->
+		
+	<!--</smartTable:SmartTable>-->
+	<Table id="LifeInsurance" inset="true" items="{/zcds_lifeins}" >
+	     <columns >
+	         <Column width="12em">
+	             <Text text="Insurance ID" />
+	         </Column>
+	                     <Column width="12em">
+	             <Text text="Insurer ID" />
+	         </Column>
+	                     <Column width="12em">
+	             <Text text="Name" />
+	         </Column>
+	                     <Column width="12em">
+	             <Text text="Mobile No" />
+	         </Column>
+	     </columns>
+	     <items>
+	         <ColumnListItem  type="Navigation" press="goToTermInsuranceMember1"  >
+	             <cells >
+	                 <ObjectIdentifier title="{Insuranceid}" />
+	                 <Text text="{Insurerid}" />
+	                 <Text text="{Name}" />
+					 <Text text="{Mobileno}" />
+	             </cells>
+	         </ColumnListItem>
+	     </items>
+	 </Table>
+</c:FragmentDefinition>

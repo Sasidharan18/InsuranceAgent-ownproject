@@ -1,0 +1,47 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:lst="sap.m.list"
+	xmlns:f="sap.f"
+	xmlns:core="sap.ui.core" controllerName="sap.ui5.InsuranceAgent.Insagentwithodata.controller.View2" displayBlock="true">
+
+<!-- <App id = "app"> -->
+	<!-- <Shell> -->
+	<!-- <SplitApp>
+			<masterPages>
+				<core:Fragment fragmentName="sap.ui5.InsuranceAgent.view.Fragments.GenericTile" type="XML"/>
+			</masterPages>
+			<detailPages>
+				<mvc:XMLView viewName="sap.ui5.InsuranceAgent.view.Landing" id="landing"/>
+			</detailPages>
+		</SplitApp> -->
+	
+
+	<!-- <l:ResponsiveSplitter defaultPane="cid" >
+
+		<l:PaneContainer orientation="Horizontal" >
+
+			<l:SplitPane requiredParentWidth="100" id="ins">
+
+				<l:content> -->
+<Page backgroundDesign="Transparent" title="SK Insurance">
+	<Button text="Read" press="omodel_read"/>
+					<core:Fragment fragmentName="sap.ui5.InsuranceAgent.Insagentwithodata.view.Fragments.GenericTile" type="XML"/>
+</Page>
+				<!-- </l:content>
+
+			</l:SplitPane>
+			<l:SplitPane requiredParentWidth="100" id="cid">
+				<Panel id = "2">
+					<content>
+						<mvc:XMLView viewName="sap.ui5.InsuranceAgent.view.Landing" id="landing"/>
+					</content>
+				</Panel>
+
+			</l:SplitPane>
+		</l:PaneContainer>
+	</l:ResponsiveSplitter> -->
+
+	<!-- </Shell> -->
+	<!-- </App> -->
+</mvc:View>

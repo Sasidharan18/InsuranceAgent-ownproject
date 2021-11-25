@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:Reference
+		Uri="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="Aggregation"/></edmx:Reference>
+	<edmx:Reference
+		Uri="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/></edmx:Reference>
+	<edmx:Reference
+		Uri="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/><edmx:Include Namespace="Org.OData.Capabilities.V1"/></edmx:Reference>
+	<edmx:Reference
+		Uri="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CODELIST',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="com.sap.vocabularies.CodeList.v1" Alias="SAP__CodeList"/></edmx:Reference>
+	<edmx:Reference
+		Uri="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="SAP__common"/></edmx:Reference>
+	<edmx:Reference
+		Uri="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:Reference
+		Uri="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CORE',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="Org.OData.Core.V1" Alias="SAP__core"/></edmx:Reference>
+	<edmx:Reference
+		Uri="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="Org.OData.Measures.V1" Alias="Measures"/></edmx:Reference>
+	<edmx:Reference
+		Uri="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/></edmx:Reference>
+	<edmx:Reference
+		Uri="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/></edmx:Reference>
+	<edmx:Reference
+		Uri="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/></edmx:Reference>
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="cds_zcds_insagent" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm"><Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+			<EntityType Name="zcds_inscompanyType" sap:label="insurance company" sap:content-version="1">
+				<Key><PropertyRef Name="id"/></Key><Property Name="id" Type="Edm.Byte" Nullable="false"/><Property Name="name" Type="Edm.String" MaxLength="50"/><NavigationProperty Name="tolife_ins" Relationship="cds_zcds_insagent.assoc_1E5708BEFDA2B86219AABD0089B28821"
+					FromRole="FromRole_assoc_1E5708BEFDA2B86219AABD0089B28821" ToRole="ToRole_assoc_1E5708BEFDA2B86219AABD0089B28821"/><NavigationProperty Name="toveh_ins" Relationship="cds_zcds_insagent.assoc_E49E08D72B4C330C32E6A14B64C93A5B"
+					FromRole="FromRole_assoc_E49E08D72B4C330C32E6A14B64C93A5B" ToRole="ToRole_assoc_E49E08D72B4C330C32E6A14B64C93A5B"/></EntityType>
+			<EntityType Name="zcds_lifeinsType" sap:label="life insurance" sap:content-version="1">
+				<Key><PropertyRef Name="Insuranceid"/></Key><Property Name="Insuranceid" Type="Edm.Int16" Nullable="false"/><Property Name="Insurerid" Type="Edm.Byte"/><Property Name="Insurancetype" Type="Edm.String" MaxLength="4"/><Property Name="Name" Type="Edm.String" MaxLength="16"/><Property Name="Dob" Type="Edm.DateTime" Precision="0" sap:display-format="Date"/><Property Name="Gender" Type="Edm.String" MaxLength="1"/><Property Name="Mobileno" Type="Edm.String" MaxLength="10" sap:display-format="NonNegative"/><Property Name="Email" Type="Edm.String" MaxLength="20"/><Property Name="Smoker" Type="Edm.String" MaxLength="1"/><Property Name="Drinker" Type="Edm.String" MaxLength="1"/><Property Name="AnnualIncome" Type="Edm.Int64"/><Property Name="Occupation" Type="Edm.String" MaxLength="10"/><Property Name="AddressNo" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Address Number"/><Property Name="Nominee1" Type="Edm.String" MaxLength="16"/><Property Name="Nominee2" Type="Edm.String" MaxLength="16"/><Property Name="Nominee3" Type="Edm.String" MaxLength="16"/><Property Name="Nominee4" Type="Edm.String" MaxLength="16"/><Property Name="Aadharid" Type="Edm.String" MaxLength="12" sap:display-format="NonNegative"/><Property Name="Pancard" Type="Edm.String" MaxLength="10"/><Property Name="InsValue" Type="Edm.Int32"/><Property Name="Validitystartdate" Type="Edm.DateTime" Precision="0" sap:display-format="Date"/><Property Name="Validityenddate" Type="Edm.DateTime" Precision="0" sap:display-format="Date"/><Property Name="Premium" Type="Edm.Decimal" Precision="10" Scale="3" sap:unit="Currency" sap:variable-scale="true"/><Property Name="Currency" Type="Edm.String" MaxLength="5" sap:semantics="currency-code"/></EntityType>
+			<EntityType Name="zcds_vehinsType" sap:label="vehicle insurance" sap:content-version="1">
+				<Key><PropertyRef Name="Insuranceid"/></Key><Property Name="Insuranceid" Type="Edm.Int16" Nullable="false"/><Property Name="Insurerid" Type="Edm.Byte"/><Property Name="Insurancetype" Type="Edm.String" MaxLength="4"/><Property Name="Regno" Type="Edm.String" MaxLength="11"/><Property Name="Validitystartdate" Type="Edm.DateTime" Precision="0" sap:display-format="Date"/><Property Name="Validityenddate" Type="Edm.DateTime" Precision="0" sap:display-format="Date"/><Property Name="Value" Type="Edm.Int32"/><Property Name="Vehregdate" Type="Edm.DateTime" Precision="0" sap:display-format="Date"/><Property Name="ChasisNumber" Type="Edm.String" MaxLength="16"/><Property Name="VehType" Type="Edm.String" MaxLength="10"/><Property Name="PremiumAmt" Type="Edm.Decimal" Precision="8" Scale="3" sap:unit="Currency" sap:variable-scale="true"/><Property Name="Currency" Type="Edm.String" MaxLength="5" sap:semantics="currency-code"/><Property Name="FuelType" Type="Edm.String" MaxLength="1"/></EntityType>
+			<EntityType Name="ztest_matplstaType" sap:label="test matplsta" sap:content-version="1">
+				<Key><PropertyRef Name="Matid"/><PropertyRef Name="Locid"/><PropertyRef Name="Applid"/></Key><Property Name="Matid" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Product ID"
+					sap:quickinfo="Internal Number (UID) for Product"/><Property Name="Locid" Type="Edm.String" Nullable="false" MaxLength="22" sap:label="Location ID"
+					sap:quickinfo="Internal Location Number for Customer, Supplier, or Plant"/><Property Name="Applid" Type="Edm.String" Nullable="false" MaxLength="3" sap:display-format="UpperCase" sap:label="Application ID"
+					sap:quickinfo="ID of Application which has set specific Planning Status"/><Property Name="Plstat" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Planning Status"
+					sap:quickinfo="Planning Status of a Material"/><Property Name="Matnr" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:label="Product Number"/><Property Name="Locno" Type="Edm.String" MaxLength="20" sap:display-format="UpperCase" sap:label="Location"/><Property Name="Scope" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Scope Limitation"/><Property Name="Scopeprflid" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Scope Profile"/></EntityType>
+			<EntityType Name="SAP__Currency" sap:content-version="1">
+				<Key><PropertyRef Name="CurrencyCode"/></Key><Property Name="CurrencyCode" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Currency" sap:semantics="currency-code"/><Property Name="ISOCode" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="ISO Code"/><Property Name="Text" Type="Edm.String" Nullable="false" MaxLength="15" sap:label="Short Text"/><Property Name="DecimalPlaces" Type="Edm.Byte" Nullable="false" sap:label="Decimals"/></EntityType>
+			<EntityType Name="SAP__UnitOfMeasure" sap:content-version="1">
+				<Key><PropertyRef Name="UnitCode"/></Key><Property Name="UnitCode" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Internal UoM" sap:semantics="unit-of-measure"/><Property Name="ISOCode" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="ISO Code"/><Property Name="ExternalCode" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Commercial"/><Property Name="Text" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Measurement Unit Txt"/><Property Name="DecimalPlaces" Type="Edm.Int16" sap:label="Decimal Places"/></EntityType>
+			<Association Name="assoc_E49E08D72B4C330C32E6A14B64C93A5B" sap:content-version="1"><End Type="cds_zcds_insagent.zcds_inscompanyType" Multiplicity="1" Role="FromRole_assoc_E49E08D72B4C330C32E6A14B64C93A5B"/><End Type="cds_zcds_insagent.zcds_vehinsType" Multiplicity="*" Role="ToRole_assoc_E49E08D72B4C330C32E6A14B64C93A5B"/></Association>
+			<Association Name="assoc_1E5708BEFDA2B86219AABD0089B28821" sap:content-version="1"><End Type="cds_zcds_insagent.zcds_inscompanyType" Multiplicity="1" Role="FromRole_assoc_1E5708BEFDA2B86219AABD0089B28821"/><End Type="cds_zcds_insagent.zcds_lifeinsType" Multiplicity="*" Role="ToRole_assoc_1E5708BEFDA2B86219AABD0089B28821"/></Association>
+			<EntityContainer Name="cds_zcds_insagent_Entities" m:IsDefaultEntityContainer="true" sap:message-scope-supported="true"
+				sap:supported-formats="atom json xlsx pdf"><EntitySet Name="SAP__Currencies" EntityType="cds_zcds_insagent.SAP__Currency" sap:content-version="1"/><EntitySet Name="SAP__UnitsOfMeasure" EntityType="cds_zcds_insagent.SAP__UnitOfMeasure" sap:content-version="1"/><EntitySet Name="zcds_inscompany" EntityType="cds_zcds_insagent.zcds_inscompanyType" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:content-version="1"/><EntitySet Name="zcds_lifeins" EntityType="cds_zcds_insagent.zcds_lifeinsType" sap:content-version="1"/><EntitySet Name="zcds_vehins" EntityType="cds_zcds_insagent.zcds_vehinsType" sap:content-version="1"/><EntitySet Name="ztest_matplsta" EntityType="cds_zcds_insagent.ztest_matplstaType" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:content-version="1"/>
+				<AssociationSet Name="assoc_E49E08D72B4C330C32E6A14B64C93A5B" Association="cds_zcds_insagent.assoc_E49E08D72B4C330C32E6A14B64C93A5B"
+					sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="zcds_inscompany" Role="FromRole_assoc_E49E08D72B4C330C32E6A14B64C93A5B"/><End EntitySet="zcds_vehins" Role="ToRole_assoc_E49E08D72B4C330C32E6A14B64C93A5B"/></AssociationSet>
+				<AssociationSet Name="assoc_1E5708BEFDA2B86219AABD0089B28821" Association="cds_zcds_insagent.assoc_1E5708BEFDA2B86219AABD0089B28821"
+					sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="zcds_inscompany" Role="FromRole_assoc_1E5708BEFDA2B86219AABD0089B28821"/><End EntitySet="zcds_lifeins" Role="ToRole_assoc_1E5708BEFDA2B86219AABD0089B28821"/></AssociationSet>
+			</EntityContainer>
+			<Annotations Target="cds_zcds_insagent.cds_zcds_insagent_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="Common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true"/></Annotations>
+			<Annotations Target="cds_zcds_insagent.cds_zcds_insagent_Entities/zcds_inscompany" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Capabilities.NavigationRestrictions">
+					<Record>
+						<PropertyValue Property="RestrictedProperties">
+							<Collection>
+								<Record><PropertyValue Property="NavigationProperty" NavigationPropertyPath="tolife_ins"/>
+									<PropertyValue Property="InsertRestrictions">
+										<Record><PropertyValue Property="Insertable" Bool="true"/></Record>
+									</PropertyValue>
+								</Record>
+								<Record><PropertyValue Property="NavigationProperty" NavigationPropertyPath="toveh_ins"/>
+									<PropertyValue Property="InsertRestrictions">
+										<Record><PropertyValue Property="Insertable" Bool="true"/></Record>
+									</PropertyValue>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_zcds_insagent.cds_zcds_insagent_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Org.OData.Capabilities.V1.BatchSupport">
+					<Record Type="Org.OData.Capabilities.V1.BatchSupportType"><PropertyValue Property="ReferencesAcrossChangeSetsSupported" Bool="true"/></Record>
+				</Annotation>
+				<Annotation Term="SAP__CodeList.CurrencyCodes">
+					<Record><PropertyValue Property="Url" String="./$metadata"/><PropertyValue Property="CollectionPath" String="SAP__Currencies"/></Record>
+				</Annotation>
+				<Annotation Term="SAP__CodeList.UnitsOfMeasure">
+					<Record><PropertyValue Property="Url" String="./$metadata"/><PropertyValue Property="CollectionPath" String="SAP__UnitsOfMeasure"/></Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_zcds_insagent.SAP__Currency/CurrencyCode" xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="SAP__common.Text" Path="Text"/><Annotation Term="SAP__common.UnitSpecificScale" Path="DecimalPlaces"/><Annotation Term="SAP__CodeList.StandardCode" Path="ISOCode"/></Annotations>
+			<Annotations Target="cds_zcds_insagent.SAP__UnitOfMeasure/UnitCode" xmlns="http://docs.oasis-open.org/odata/ns/edm"><Annotation Term="SAP__common.Text" Path="Text"/><Annotation Term="SAP__common.UnitSpecificScale" Path="DecimalPlaces"/><Annotation Term="SAP__CodeList.StandardCode" Path="ISOCode"/><Annotation Term="SAP__CodeList.ExternalCode" Path="ExternalCode"/></Annotations>
+			<Annotations Target="cds_zcds_insagent.SAP__UnitOfMeasure" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="SAP__core.AlternateKeys">
+					<Collection>
+						<Record>
+							<PropertyValue Property="Key">
+								<Collection>
+									<Record><PropertyValue Property="Name" Path="ExternalCode"/><PropertyValue Property="Alias" String="ExternalCode"/></Record>
+								</Collection>
+							</PropertyValue>
+						</Record>
+					</Collection>
+				</Annotation>
+			</Annotations><atom:link rel="self"
+				href="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/sap/ZCDS_INSAGENT_SRVBND/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/><atom:link rel="latest-version"
+				href="https://webidecp-fiori.dispatcher.int.sap.eu2.hana.ondemand.com/destinations/EMOCLNT030/sap/opu/odata/sap/ZCDS_INSAGENT_SRVBND/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

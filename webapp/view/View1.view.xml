@@ -1,0 +1,14 @@
+<mvc:View controllerName="sap.ui5.InsuranceAgent.Insagentwithodata.controller.View1"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:f="sap.f" displayBlock = "true">
+<!--<Shell id = "shell_id">-->
+		<App id = "app" backgroundImage="image" backgroundRepeat="true" backgroundOpacity="0.5">
+		<f:FlexibleColumnLayout
+			id="layout"
+			layout="TwoColumnsMidExpanded"
+			backgroundDesign="Translucent">
+		</f:FlexibleColumnLayout>
+	</App>
+<!--</Shell>-->
+</mvc:View>

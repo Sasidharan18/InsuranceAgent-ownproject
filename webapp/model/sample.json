@@ -1,0 +1,339 @@
+{
+    "InsuranceType": [{
+            "ID": "Term",
+            "Type": "Term Insurance"
+        },
+        {
+            "ID": "Veh",
+            "Type": "Vehical Insurance"
+        },
+        {
+            "ID": "Med",
+            "Type": "Medical Insurance"
+        },
+        {
+            "ID": "Life",
+            "Type": "Life Insurance"
+        }
+    ],
+    "InsuranceCompany": [{
+            "ID": "1",
+            "name": "TATA AIG"
+        },
+        {
+            "ID": "2",
+            "name": "New India Assurance"
+        },
+        {
+            "ID": "3",
+            "name": "Future Generali"
+        },
+        {
+            "ID": "4",
+            "name": "Aviva Life Insurance"
+        },
+        {
+            "ID": "5",
+            "name": "Bajaj Allianz Life Insurance"
+        },
+        {
+            "ID": "6",
+            "name": "Bharti AXA Life Insurance"
+        },
+        {
+            "ID": "7",
+            "name": "Birla Sun Life Insurance"
+        },
+        {
+            "ID": "8",
+            "name": "DHFL Pramerica Life Insurance"
+        },
+        {
+            "ID": "9",
+            "name": "Edelweiss Tokio Life Insurance"
+        },
+        {
+            "ID": "10",
+            "name": "Sahara Life Insurance"
+        },
+        {
+            "ID": "11",
+            "name": "SBI Life Insurance"
+        },
+        {
+            "ID": "12",
+            "name": "Sriram Life Insurance"
+        }
+    ],
+    "InsuranceVeh": [{
+            "InsurerId": "1",
+            "InsuranceID": "1",
+            "InsuranceType": "Veh",
+            "RegNo": "TN40T1111",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "1",
+            "InsuranceID": "2",
+            "InsuranceType": "Veh",
+            "RegNo": "TN40T5555",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "1",
+            "InsuranceID": "3",
+            "InsuranceType": "Veh",
+            "RegNo": "TN40T3333",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "1",
+            "InsuranceID": "4",
+            "InsuranceType": "Veh",
+            "RegNo": "TN40T6666",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "2",
+            "InsuranceID": "1",
+            "InsuranceType": "Veh",
+            "RegNo": "TN40T4444",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "2",
+            "InsuranceID": "2",
+            "InsuranceType": "Veh",
+            "RegNo": "TN40T2222",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "3",
+            "InsuranceID": "1",
+            "InsuranceType": "Veh",
+            "RegNo": "TN40T4444",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "3",
+            "InsuranceID": "2",
+            "InsuranceType": "Veh",
+            "RegNo": "TN40T4142",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        }
+    ],
+    "InsuranceTerm": [{
+            "InsurerId": "1",
+            "InsuranceID": "1",
+            "InsuranceType": "Term",
+            "Name": "Peter",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "1",
+            "InsuranceID": "2",
+            "InsuranceType": "Term",
+            "Name": "Maddy",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "1",
+            "InsuranceID": "3",
+            "InsuranceType": "Term",
+            "Name": "Bradly",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "1",
+            "InsuranceID": "4",
+            "InsuranceType": "Term",
+            "Name": "Watson",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "2",
+            "InsuranceID": "1",
+            "InsuranceType": "Term",
+            "Name": "Mano",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "2",
+            "InsuranceID": "2",
+            "InsuranceType": "Term",
+            "Name": "Dheena",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "3",
+            "InsuranceID": "1",
+            "InsuranceType": "Term",
+            "Name": "Patil",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        },
+        {
+            "InsurerId": "3",
+            "InsuranceID": "2",
+            "InsuranceType": "Term",
+            "Name": "Peter Paul",
+            "ValidityStartDate": "01012021",
+            "ValidityEndDate": "31122021",
+            "Value": "1500000"
+        }
+    ],
+    "InsuranceLife": [],
+    "InsuranceMed": [],
+    "PendingVeh": [{
+            "InsurerId": "1",
+            "InsuranceID": "1",
+            "claimCount": "1",
+            "RegNo": "TN67B2111",
+            "DateOfAccident": "31122021",
+            "InitialEstimationValue": "20000",
+            "FinalEstimationValue": "23000",
+            "ApprovedAmount": "190000",
+            "ClaimStatus": "Processed"
+        },
+        {
+            "InsurerId": "1",
+            "InsuranceID": "2",
+            "claimCount": "1",
+            "RegNo": "TN67B2222",
+            "DateOfAccident": "31122021",
+            "InitialEstimationValue": "20000",
+            "FinalEstimationValue": "23000",
+            "ApprovedAmount": "190000",
+            "ClaimStatus": "Processed"
+        },
+        {
+            "InsurerId": "1",
+            "InsuranceID": "3",
+            "claimCount": "1",
+            "RegNo": "TN67B333",
+            "DateOfAccident": "31122021",
+            "InitialEstimationValue": "20000",
+            "FinalEstimationValue": "23000",
+            "ApprovedAmount": "190000",
+            "ClaimStatus": "Processed"
+        },
+        {
+            "InsurerId": "2",
+            "InsuranceID": "1",
+            "claimCount": "1",
+            "RegNo": "TN67B2111",
+            "DateOfAccident": "31122021",
+            "InitialEstimationValue": "20000",
+            "FinalEstimationValue": "23000",
+            "ApprovedAmount": "190000",
+            "ClaimStatus": "Processed"
+        },
+        {
+            "InsurerId": "2",
+            "InsuranceID": "2",
+            "claimCount": "1",
+            "RegNo": "TN67B2222",
+            "DateOfAccident": "31122021",
+            "InitialEstimationValue": "20000",
+            "FinalEstimationValue": "23000",
+            "ApprovedAmount": "190000",
+            "ClaimStatus": "Processed"
+        },
+        {
+            "InsurerId": "3",
+            "InsuranceID": "1",
+            "claimCount": "1",
+            "RegNo": "TN67B2222",
+            "DateOfAccident": "31122021",
+            "InitialEstimationValue": "20000",
+            "FinalEstimationValue": "23000",
+            "ApprovedAmount": "190000",
+            "ClaimStatus": "Processed"
+        }
+    ],
+    "PendingTerm": [{
+            "InsurerId": "1",
+            "InsuranceID": "1",
+            "claimCount": "1",
+            "Name": "peter",
+            "DateOfAccident": "31122021",
+            "InitialEstimationValue": "20000",
+            "FinalEstimationValue": "23000",
+            "ApprovedAmount": "190000",
+            "ClaimStatus": "Processed"
+        },
+        {
+            "InsurerId": "1",
+            "InsuranceID": "2",
+            "claimCount": "1",
+            "Name": "peter",
+            "DateOfAccident": "31122021",
+            "InitialEstimationValue": "20000",
+            "FinalEstimationValue": "23000",
+            "ApprovedAmount": "190000",
+            "ClaimStatus": "Processed"
+        },
+        {
+            "InsurerId": "2",
+            "InsuranceID": "1",
+            "claimCount": "1",
+            "Name": "peter",
+            "DateOfAccident": "31122021",
+            "InitialEstimationValue": "20000",
+            "FinalEstimationValue": "23000",
+            "ApprovedAmount": "190000",
+            "ClaimStatus": "Processed"
+        },
+        {
+            "InsurerId": "2",
+            "InsuranceID": "1",
+            "claimCount": "1",
+            "Name": "peter",
+            "DateOfAccident": "31122021",
+            "InitialEstimationValue": "20000",
+            "FinalEstimationValue": "23000",
+            "ApprovedAmount": "190000",
+            "ClaimStatus": "Processed"
+        },
+        {
+            "InsurerId": "3",
+            "InsuranceID": "1",
+            "claimCount": "1",
+            "Name": "peter",
+            "DateOfAccident": "31122021",
+            "InitialEstimationValue": "20000",
+            "FinalEstimationValue": "23000",
+            "ApprovedAmount": "190000",
+            "ClaimStatus": "Processed"
+        }
+    ]
+}

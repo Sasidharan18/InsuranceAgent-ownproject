@@ -1,0 +1,58 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.f">
+	<VBox>
+		<HBox>
+		<SearchField width="18rem" placeholder="Search Insurance Company" liveChange=".onSearch"/>
+		<Input id="InsurerInput" placeholder="Enter Insurer" showSuggestion="true" suggestionRows="{/zcds_inscompany}" type="Text">
+			<suggestionColumns>
+				<!--<Column demandPopin="true" hAligh="Begin" popinDisplay="Inline">-->
+				<!--	<Label text="ID"/>-->
+				<!--</Column>-->
+				<Column demandPopin="true" hAligh="Begin" popinDisplay="Inline">
+					<Label text="Insurance Company"/>
+				</Column>
+			</suggestionColumns>
+			<suggestionRows>
+				<ColumnListItem>
+					<cells>
+						<!--<Label text="{id}"/>-->
+						<Label text="{name}"/>
+					</cells>
+				</ColumnListItem>
+			</suggestionRows>
+		</Input> 
+		 </HBox>
+		<List id="InsuranceCompany" items="{/zcds_inscompany}" mode="SingleSelectMaster" width="100%">
+			<items>
+				<CustomListItem>
+					<Panel id="Insurance" headerText="{name}" width="auto" expandable="true" backgroundDesign="Transparent">
+						<!--headerText= "SK Insurance" class="sapUiResponsiveMargin" -->
+						<!--width="auto"> -->
+						<content>
+							<GenericTile id="totalInsurers" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" sizeBehavior="Responsive" width="auto"
+								header="Insurers" subheader="Total Count" press=".goToInsurers">
+								<TileContent unit="" footer="Total">
+									<NumericContent id="InsuranceCount1" scale="NOs" value="{ path:'id', formatter: '.formatter.InsurersCount' }" valueColor="Good"
+										indicator="None" withMargin="false"/>
+								</TileContent>
+								<customData>
+									<core:CustomData key="Tile" value="TotalCount"/>
+								</customData>
+							</GenericTile>
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" size="L" header="Pending claims" subheader="Expenses"
+								press=".goToInsurers">
+								<TileContent unit="EUR" footer="Current Quarter">
+									<NumericContent scale="M" value="{ path:'id', formatter: '.formatter.PendingClaimsCount' }" valueColor="Error" indicator="Up"
+										withMargin="false"/>
+								</TileContent>
+								<customData>
+									<core:CustomData key="Tile" value="PendingClaims"/>
+								</customData>
+							</GenericTile>
+						</content>
+					</Panel>
+				</CustomListItem>
+			</items>
+		</List>
+	</VBox>
+</core:FragmentDefinition>
+<!-- sap.ui5.InsuranceAgent.controller.View2.InsuranceCount( )  -->

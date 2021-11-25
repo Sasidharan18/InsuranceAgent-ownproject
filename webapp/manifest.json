@@ -1,0 +1,204 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "sap.ui5.InsuranceAgent",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"resources": "resources.json",
+		"ach": "ach",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"mainService": {
+				"uri": "https://ldciemo.wdf.sap.corp:44300/sap/opu/odata/sap/ZCDS_INSAGENT_SRVBND/?sap-client=030",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml",
+					"annotations": [
+						"annotation1"
+					]
+				}
+			},
+			"annotation1": {
+				"type": "ODataAnnotation",
+				"uri": "annotation/annotation1.xml",
+				"settings": {
+					"localUri": "annotation/annotation1.xml"
+				}
+			},
+			"ZCDS_INSAGENT_SRVBND": {
+				"uri": "/sap/opu/odata/sap/ZCDS_INSAGENT_SRVBND/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/ZCDS_INSAGENT_SRVBND/metadata.xml",
+					"annotations": [
+						"annotation2"
+					]
+				}
+			},
+			"annotation2": {
+				"type": "ODataAnnotation",
+				"uri": "annotation/annotation2.xml",
+				"settings": {
+					"localUri": "annotation/annotation2.xml"
+				}
+			}
+		},
+		"crossNavigation": {
+			"inbounds": {}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": true,
+		"rootView": {
+			"viewName": "sap.ui5.InsuranceAgent.Insagentwithodata.view.View1",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"handleValidation": true,
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "sap.ui5.InsuranceAgent.Insagentwithodata.i18n.i18n"
+				}
+			},
+			"main": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {},
+				"uri": "model/sample.json",
+				"preload": true
+			},
+			"": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request",
+					"refreshAfterChange": true
+				},
+				"dataSource": "ZCDS_INSAGENT_SRVBND",
+				"preload": true
+			},
+			"@i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+
+				"routerClass": "sap.f.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "sap.ui5.InsuranceAgent.Insagentwithodata.view",
+				"controlAggregation": "beginColumnPages",
+				"controlId": "layout",
+				"bypassed": {
+					"target": ["notfound"]
+				}
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "view2",
+				"target": [
+					"view2",
+					"landing"
+				]
+			}, {
+				"pattern": "InsuranceDetail/{ID}",
+				"name": "detail",
+				"titleTarget": "detail",
+				"target": [
+					"view2",
+					"detail"
+				]
+			}, {
+				"pattern": "PendingClaimDetail/{ID}",
+				"name": "pendingclaim",
+				"titleTarget": "detail",
+				"target": [
+					"view2",
+					"detail"
+				]
+			}],
+			"targets": {
+				"view2": {
+					"viewType": "XML",
+					"viewName": "View2",
+					"viewLevel": 1,
+					"viewId": "View2",
+					"transition": "slide",
+					"clearAggregation": true
+				},
+				"detail": {
+					"viewType": "XML",
+					"viewName": "InsuranceDetail",
+					"viewLevel": 1,
+					"viewId": "InsuranceDetail",
+					"transition": "slide",
+					"clearAggregation": true,
+					"controlAggregation": "midColumnPages"
+				},
+				"landing": {
+					"viewType": "XML",
+					"viewName": "Landing",
+					"viewLevel": 1,
+					"viewId": "Landing",
+					"transition": "slide",
+					"clearAggregation": true,
+					"controlAggregation": "midColumnPages"
+				},
+				"notfound": {
+					"viewName": "NotFound",
+					"viewId": "NotFound",
+					"transition": "show",
+					"clearAggregation": true,
+					"controlAggregation": "midColumnPages"
+				}
+			}
+		}
+	}
+}

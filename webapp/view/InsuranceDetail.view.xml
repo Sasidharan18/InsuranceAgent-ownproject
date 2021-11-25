@@ -1,0 +1,16 @@
+<mvc:View id = "InsuranceDetail" controllerName="sap.ui5.InsuranceAgent.Insagentwithodata.controller.InsuranceDetail"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <Page id="InsuranceDetailPage" title="InsuranceDetail" showNavButton="true" navButtonPress="onNavBack" backgroundDesign="Transparent">
+        <content id="content">
+			<core:ExtensionPoint name ="VehEP"/>
+            <core:Fragment fragmentName="sap.ui5.InsuranceAgent.Insagentwithodata.view.Fragments.InsuranceTypeButton1" type="XML"/>
+
+            <!-- <core:Fragment fragmentName="sap.ui5.InsuranceAgent.view.Fragments.InsuranceTypeButton2" type="XML"/> -->
+
+            <core:Fragment fragmentName="sap.ui5.InsuranceAgent.Insagentwithodata.view.Fragments.NavContainer" type="XML"/>
+        </content>
+    </Page>
+</mvc:View>

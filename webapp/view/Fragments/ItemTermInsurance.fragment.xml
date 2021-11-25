@@ -1,0 +1,90 @@
+<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<Dialog id="createDialog" title="Enter New Term Insuarnce" contentWidth="50%">
+		<f:SimpleForm layout="ResponsiveGridLayout" id="SystemInfo" editable="true" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12"
+			adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+			singleContainerFullSize="false">
+			<f:content>
+				<Label text="Name" labelFor="name"/>
+				<Input id="name" required="true" width="50%"/>
+				<Label text="Date of Birth" labelFor="dob"/>
+				<DatePicker id="dob" displayFormat="long" change="handleChange" width="10rem" placeholder="Enter Date of Birth"
+					class="sapUiSmallMarginBottom"/>
+				<Label text="Gender" labelFor="gender"/>
+				<RadioButtonGroup id="gender" columns="2">
+					<RadioButton id="male" text="Male"/>
+					<RadioButton id="female" text="Female"/>
+				</RadioButtonGroup>
+				<Label text="Phone Number" labelFor="phonenumber"/>
+				<Input id="phonenumber" type="Number" value="{type:'sap.ui.model.type.Integer', constraints: { minimum:'0' , maximum:'10'} }"
+					liveChange=".validatePhoneNumber" width="10rem"/>
+				<Label text="Email Address" labelFor="email"/>
+				<Input id="email" type="email" width="10rem"/>
+				<Label text="Smoker" labelFor="smoker"/>
+				<Switch state="false" id="smoker" customTextOn="Yes" customTextOff="No">
+					<layoutData>
+						<FlexItemData growFactor="1"/>
+					</layoutData>
+				</Switch>
+				<HBox>
+					<Label text="Drinker" labelFor="drinker"/>
+					<Switch state="false" id="drinker" customTextOn="Yes" customTextOff="No">
+						<layoutData>
+							<FlexItemData growFactor="1"/>
+						</layoutData>
+					</Switch>
+				</HBox>
+				<Label text="Annual Income LPA" labelFor="income"/>
+				<RangeSlider id="income" enabled="true" inputsAsTooltips="true" max="99" min="0" showAdvancedTooltip="true" step="0.5" width="50%"
+					visible="true"></RangeSlider>
+				<Label text="Occupation" labelFor="occupation"/>
+				<Select id="occupation" forceSelection="false" selectedKey="{/Selectedoccu}" width="10rem" change=".onSelectOccupation">
+					<items>
+						<c:Item text="Salaried Private" key="SP"/>
+						<c:Item text="Business" key="B"/>
+						<c:Item text="Salaried Govt" key="SG"/>
+						<c:Item text="Military" key="M"/>
+						<c:Item text="Others" key="O"/>
+					</items>
+				</Select>
+				<Input id="occupationothers" required="true" width="10rem" placeholder="Specify occuation" enabled="false" visible="true"/>
+				<Label text="Address Line 1"/>
+				<Input value="{supp}" id="sasname"></Input>
+				<Label text="Street" labelFor="street"/>
+				<Input id="street" value="{Street}"></Input>
+				<Input id="hnum" value="{HouseNumber}"/>
+				<Label text="ZipCode"/>
+				<Input id="zipcode" value="{ZIPCode}"/>
+				<Input id="city" value="{City}"/>
+				<Label text="Country123"/>
+				<Select id="country" selectedKey="{Country}">
+					<items>
+						<c:Item text="India" key="India"/>
+					</items>
+				</Select>
+				<Label text="Aadhar" labelFor="aadhar"/>
+				<Input id="aadhar" type="Number" required="true" width="20rem" placeholder="xxxx-xxxx-xxxx"/>
+				<Label text="Pancard" labelFor="pancard"/>
+				<Input id="pancard" required="true" width="20rem" placeholder=""/>
+				<Label text="Insurance Value" labelFor="insvalue"/>
+				<Slider id="insvalue" inputsAsTooltips="true" max="99" min="25" showAdvancedTooltip="true" step="2" width="50%" visible="true"></Slider>
+				<Label text="Insurance Period" labelFor="insperiod"/>
+				<DateRangeSelection id="insperiod" showFooter="true" change="handleChange" width="14rem"/>
+				<!-- <Label text = "Nominee" labelFor="smoker"/>
+    <Label text = "Address" labelFor="smoker"/>
+     <Label text = "Aadhar Number" labelFor="smoker"/>
+      <Label text = "PanCard Number" labelFor="smoker"/>
+       <Label text = "Photo" labelFor="smoker"/>
+        <Label text = "Insurance Value" labelFor="smoker"/>
+         <Label labelFor="smoker"> start & End Date </Label>  -->
+				<Label text="Photo"/>
+				<UploadCollection id="photo" maximumFilenameLength="55" maximumFileSize="10" multiple="flase" sameFilenameAllowed="true"
+					instantUpload="false" noDataDescription="Drop files or use the &quot;Add&quot; button to keep files ready for upload" change="onChange"
+					fileDeleted="onFileDeleted" filenameLengthExceed="onFilenameLengthExceed" fileSizeExceed="onFileSizeExceed" typeMissmatch="onTypeMissmatch"
+					uploadComplete="onUploadComplete" beforeUploadStarts="onBeforeUploadStarts"/>
+			</f:content>
+		</f:SimpleForm>
+		<endButton>
+			<Button text="" icon="sap-icon://decline" press=".onCloseDialog"/>
+		</endButton>
+	</Dialog>
+</c:FragmentDefinition>
